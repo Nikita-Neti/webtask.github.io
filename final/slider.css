@@ -1,0 +1,65 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    font-family:'Segoe UI', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color:grey;
+    display: block;
+    margin: 0;
+  }
+
+#slider{  
+    width:500px;  
+    height:400px;  
+    margin: 300px;
+    position: fixed; 
+    margin-left:350px;   
+    overflow:hidden; 
+    
+
+}  
+.slides{  
+    display:block;  
+    width:6000px;  
+    height:400px;  
+    margin-left:0;  
+    padding:50px;  
+}  
+.slide{  
+    float:left;  
+    list-style-type:none;  
+    width:500px;  
+    height:300px;  
+}  
+ .slides img{  
+    width:500px;  
+    height:300px;  
+}  
+
+.about-img {
+    border-radius: 0.25rem;
+    height:150px;
+    margin-bottom:2rem;
+     /*  background: url('../start/kitchen1.jpg') center/cover no-repeat; */
+      opacity: 0.9;
+      border-radius:1rem;
+  
+      position:fixed;
+      top:0;
+      left: 0;
+      width:100%;
+      height: 100%;
+      
+      /* display:flex;
+      align-items: center;
+      justify-content: center; */
+      border-radius:0.25rem;
+      border:4px solid rosybrown ;
+      z-index: -1;
+  }

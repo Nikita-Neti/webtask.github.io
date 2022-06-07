@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    * {
+        box-sizing: border-box;
+      }
+      
+      /* Style inputs */
+      input[type=text],textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid black;
+        margin-top: 5px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: green;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: rosybrown;
+      }
+      
+      /* Style the container/contact section */
+      .page {
+        border-radius: 5px;
+        background-color:gainsboro;
+        padding: 10px;
+      }
+      
+      /* Create two columns that float next to eachother */
+      .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+    }
+</style>
+</head>
+<body>
+    <main class="page">
+        <section class="contact-container">
+            <article class="contact-info">
+                <h2>Contact Us</h2>
+                <div class="row">
+                    <div class="column">
+                        <img src="./start/contact.jpeg" >
+                    </div>
+                    <div class="column">
+                        <form>
+                          <label>Enter first Name :</label>
+                          <input id="fname" name="'myname" onblur="validate1()" required>
+                          <br>
+                          <span id="error1"></span>
+                          <br><br>
+                          <label>Enter middle Name :</label>
+                          <input id="mname" name="'myname" onblur="validate2()">
+                          <br>
+                          <span id="error2"></span>
+                          <br><br>
+                          <label>Enter last Name :</label>
+                          <input id="lname" name="'myname"  onblur='validate3()'  required>
+                          <br>
+                          <span id="error3"></span>
+                          <br><br>
+                          <label>Enter email id:</label>
+                          <input type="email" id="emailid" name="'emailid" placeholder="enter valid id"  onblur="validate4()"  required>
+                          <br>
+                          <span id="error4"></span>
+                          <br><br>
+                          <label>Enter mobile number:</label>
+                          <input type="tel"     id="mobile" pattern="[0-9]{10}" onblur="validate5()" required>
+                          <br>
+                          <span id="error5"></span>
+                          <br><br>
+                          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                          <input type="submit" value="Submit">
+                        </form>
+
+                        <script src="./final/formvalidation.js"></script>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+</body>
+</html>
